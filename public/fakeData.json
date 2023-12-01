@@ -1,0 +1,473 @@
+
+[
+    {
+        "_id": 1,
+        "brandName": "Walton",
+        "brandImage": "https://i.ibb.co/8YXbPvW/walton.jpg",
+        "advertisementImages":[
+            {"img":"https://i.ibb.co/gJ72Dyr/walton1.jpg"},
+            {"img":"https://i.ibb.co/xhTxNpJ/walton2.jpg"},
+            {"img":"https://i.ibb.co/4VPtTM5/walton3.jpg"}
+          ],
+        "brandProducts": [
+          {
+            "_id": 101,
+            "productName": "Refrigerator Elite",
+            "productImg": "refrigerator-elite.jpg",
+            "brandName": "Walton",
+            "type": "Refrigerator",
+            "price": 799.99,
+            "rating": 4.6,
+            "description": "Keep your food fresh and cool with the Refrigerator Elite. Energy-efficient and spacious design."
+          },
+          {
+            "_id": 102,
+            "productName": "LED Smart TV",
+            "productImg": "tv-led-smart.jpg",
+            "brandName": "Walton",
+            "type": "Television",
+            "price": 549.99,
+            "rating": 4.3,
+            "description": "Enjoy stunning visuals and smart features with the LED Smart TV. Perfect for home entertainment."
+          },
+          {
+            "_id": 103,
+            "productName": "Washing Machine Pro",
+            "productImg": "washingmachine-pro.jpg",
+            "brandName": "Walton",
+            "type": "Washing Machine",
+            "price": 399.99,
+            "rating": 4.5,
+            "description": "Make laundry day a breeze with the Washing Machine Pro. Multiple wash programs for all your needs."
+          },
+          {
+            "_id": 104,
+            "productName": "Air Conditioner Ultra",
+            "productImg": "airconditioner-ultra.jpg",
+            "brandName": "Walton",
+            "type": "Air Conditioner",
+            "price": 899.99,
+            "rating": 4.8,
+            "description": "Stay cool in style with the Air Conditioner Ultra. Powerful cooling and energy-saving features."
+          }
+        ]
+    },
+    {
+        "_id": 2,
+        "brandName": "Singer",
+        "brandImage": "https://i.ibb.co/m64MLks/singer.png",
+        "advertisementImages":[
+            {"img":"https://i.ibb.co/Sv7qxZ4/singer1.jpg"},
+            {"img":"https://i.ibb.co/B3v0LkZ/singer2.jpg"},
+            {"img":"https://i.ibb.co/sWDfwT6/singer3.jpg"}
+          ],
+        "brandProducts": [
+          {
+            "_id": 201,
+            "productName": "Sewing Machine Pro",
+            "productImg": "sewingmachine-pro.jpg",
+            "brandName": "Singer",
+            "type": "Sewing Machine",
+            "price": 199.99,
+            "rating": 4.4,
+            "description": "Unleash your creativity with the Sewing Machine Pro. Versatile and user-friendly for all your sewing projects."
+          },
+          {
+            "_id": 202,
+            "productName": "Food Processor Deluxe",
+            "productImg": "foodprocessor-deluxe.jpg",
+            "brandName": "Singer",
+            "type": "Kitchen Appliance",
+            "price": 149.99,
+            "rating": 4.2,
+            "description": "Simplify your kitchen tasks with the Food Processor Deluxe. Powerful and efficient for food preparation."
+          },
+          {
+            "_id": 203,
+            "productName": "Steam Iron Plus",
+            "productImg": "iron-steam.jpg",
+            "brandName": "Singer",
+            "type": "Iron",
+            "price": 59.99,
+            "rating": 4.0,
+            "description": "Achieve wrinkle-free clothes with the Steam Iron Plus. Adjustable settings for different fabrics."
+          },
+          {
+            "_id": 204,
+            "productName": "Hand Blender Master",
+            "productImg": "blender-hand.jpg",
+            "brandName": "Singer",
+            "type": "Hand Blender",
+            "price": 39.99,
+            "rating": 4.3,
+            "description": "Blend, chop, and puree with the Hand Blender Master. Compact and easy to use in the kitchen."
+          }
+        ]
+    },
+    {
+        "_id": 3,
+        "brandName": "Jamuna",
+        "brandImage": "https://i.ibb.co/bLng8cT/jamuna.png",
+        "advertisementImages":[
+            {"img":"https://i.ibb.co/MBX27VN/jamuna1.jpg"},
+            {"img":"https://i.ibb.co/Fzpzdn4/jamuna2.jpg"},
+            {"img":"https://i.ibb.co/QJ4xBdH/jamuna3.jpg"}
+          ],
+        "brandProducts": [
+          {
+            "_id": 301,
+            "productName": "Vacuum Cleaner Supreme",
+            "productImg": "vacuumcleaner-supreme.jpg",
+            "brandName": "Jamuna",
+            "type": "Vacuum Cleaner",
+            "price": 129.99,
+            "rating": 4.2,
+            "description": "Keep your home spotless with the Vacuum Cleaner Supreme. Powerful suction for efficient cleaning."
+          },
+          {
+            "_id": 302,
+            "productName": "Rice Cooker Master",
+            "productImg": "ricecooker-master.jpg",
+            "brandName": "Jamuna",
+            "type": "Rice Cooker",
+            "price": 79.99,
+            "rating": 4.5,
+            "description": "Cook perfect rice every time with the Rice Cooker Master. Non-stick and easy to clean."
+          },
+          {
+            "_id": 303,
+            "productName": "Blender Pro",
+            "productImg": "blender-pro.jpg",
+            "brandName": "Jamuna",
+            "type": "Blender",
+            "price": 49.99,
+            "rating": 4.0,
+            "description": "Blend smoothies and shakes with the Blender Pro. Durable blades and multiple speed settings."
+          },
+          {
+            "_id": 304,
+            "productName": "Toaster Deluxe",
+            "productImg": "toaster-deluxe.jpg",
+            "brandName": "Jamuna",
+            "type": "Toaster",
+            "price": 34.99,
+            "rating": 4.3,
+            "description": "Start your day with crispy toast using the Toaster Deluxe. Adjustable browning for your preference."
+          }
+        ]
+    },
+    {
+        "_id": 4,
+        "brandName": "Samsung",
+        "brandImage": "https://i.ibb.co/0yghQ6F/samsung.jpg",
+        "advertisementImages":[
+            {"img":"https://i.ibb.co/Ksw9m15/samsung1.jpg"},
+            {"img":"https://i.ibb.co/ZNCDy06/samsung2.jpg"},
+            {"img":"https://i.ibb.co/3yJ4MJB/samsung3.jpg"}
+          ],
+        "brandProducts": [
+          {
+            "_id": 401,
+            "productName": "Galaxy S21",
+            "productImg": "s21-galaxy.jpg",
+            "brandName": "Samsung",
+            "type": "Smartphone",
+            "price": 999.99,
+            "rating": 4.7,
+            "description": "Experience the power of the Galaxy S21. Cutting-edge features and stunning design for the ultimate smartphone experience."
+          },
+          {
+            "_id": 402,
+            "productName": "QLED 4K Smart TV",
+            "productImg": "tv-qled-4k.jpg",
+            "brandName": "Samsung",
+            "type": "Television",
+            "price": 1499.99,
+            "rating": 4.8,
+            "description": "Immerse yourself in lifelike visuals with the QLED 4K Smart TV. Smart features and vibrant colors for an unparalleled viewing experience."
+          },
+          {
+            "_id": 403,
+            "productName": "Galaxy Buds Pro",
+            "productImg": "buds-galaxy-pro.jpg",
+            "brandName": "Samsung",
+            "type": "Wireless Earbuds",
+            "price": 199.99,
+            "rating": 4.5,
+            "description": "Enjoy premium audio quality with the Galaxy Buds Pro. Noise cancellation and comfortable fit for an immersive listening experience."
+          },
+          {
+            "_id": 404,
+            "productName": "Front Load Washer",
+            "productImg": "washer-frontload.jpg",
+            "brandName": "Samsung",
+            "type": "Washing Machine",
+            "price": 799.99,
+            "rating": 4.6,
+            "description": "Make laundry day efficient with the Front Load Washer. Large capacity and smart features for convenient use."
+          }
+        ]
+    },
+      {
+        "_id": 5,
+        "brandName": "Konka",
+        "brandImage": "https://i.ibb.co/Vx2yTBx/konka.jpg",
+        "advertisementImages":[
+            {"img":"https://i.ibb.co/V2BgtD5/konka1.jpg"},
+            {"img":"https://i.ibb.co/mzY7646/konka2.jpg"},
+            {"img":"https://i.ibb.co/DthGmNm/konka3.jpg"}
+          ],
+        "brandProducts": [
+          {
+            "_id": 501,
+            "productName": "Android Smartwatch",
+            "productImg": "watch-android.jpg",
+            "brandName": "Konka",
+            "type": "Smartwatch",
+            "price": 129.99,
+            "rating": 4.2,
+            "description": "Stay connected and track your fitness with the Android Smartwatch. Sleek design and customizable features for a personalized experience."
+          },
+          {
+            "_id": 502,
+            "productName": "Curved 4K UHD TV",
+            "productImg": "tv-curved-4k.jpg",
+            "brandName": "Konka",
+            "type": "Television",
+            "price": 899.99,
+            "rating": 4.4,
+            "description": "Immerse yourself in cinematic visuals with the Curved 4K UHD TV. Enhanced color and detail for a true home theater experience."
+          },
+          {
+            "_id": 503,
+            "productName": "Bluetooth Soundbar",
+            "productImg": "soundbar-bluetooth-konka.jpg",
+            "brandName": "Konka",
+            "type": "Soundbar",
+            "price": 129.99,
+            "rating": 4.0,
+            "description": "Upgrade your audio setup with the Bluetooth Soundbar. Powerful sound and versatile connectivity options for an immersive listening experience."
+          },
+          {
+            "_id": 504,
+            "productName": "Digital Air Fryer",
+            "productImg": "airfryer-digital.jpg",
+            "brandName": "Konka",
+            "type": "Kitchen Appliance",
+            "price": 79.99,
+            "rating": 4.3,
+            "description": "Cook healthier meals with the Digital Air Fryer. Crispy results with less oil for guilt-free indulgence."
+          }
+        ]
+      },
+      {
+        "_id": 6,
+        "brandName": "Sony",
+        "brandImage": "sony-logo.png",
+        "advertisementImages":[
+            {"img":"img1"},
+            {"img":"img1"},
+            {"img":"img1"}
+          ],
+        "brandProducts": [
+          {
+            "_id": 601,
+            "productName": "Xperia 1 III",
+            "productImg": "xperia-1-iii.jpg",
+            "brandName": "Sony",
+            "type": "Smartphone",
+            "price": 1099.99,
+            "rating": 4.8,
+            "description": "Experience flagship performance with the Xperia 1 III. Stunning display and advanced camera features for photography enthusiasts."
+          },
+          {
+            "_id": 602,
+            "productName": "Bravia OLED 4K TV",
+            "productImg": "tv-bravia-oled-4k.jpg",
+            "brandName": "Sony",
+            "type": "Television",
+            "price": 1799.99,
+            "rating": 4.9,
+            "description": "Immerse yourself in the world of entertainment with the Bravia OLED 4K TV. Crystal-clear visuals and vibrant colors for a cinematic experience."
+          },
+          {
+            "_id": 603,
+            "productName": "WH-1000XM4 Headphones",
+            "productImg": "headphones-wh-1000xm4.jpg",
+            "brandName": "Sony",
+            "type": "Headphones",
+            "price": 349.99,
+            "rating": 4.7,
+            "description": "Escape into your music with the WH-1000XM4 Headphones. Industry-leading noise cancellation and premium sound quality."
+          },
+          {
+            "_id": 604,
+            "productName": "PlayStation 5",
+            "productImg": "ps5.jpg",
+            "brandName": "Sony",
+            "type": "Gaming Console",
+            "price": 499.99,
+            "rating": 4.8,
+            "description": "Unleash the power of gaming with the PlayStation 5. Cutting-edge graphics and an extensive game library for an unparalleled gaming experience."
+          }
+        ]
+      },
+    {
+      "_id": 7,
+      "brandName": "TechMaster",
+      "brandImage": "techmaster-logo.png",
+      "advertisementImages":[
+        {"img":"img1"},
+        {"img":"img1"},
+        {"img":"img1"}
+      ],
+      "brandProducts": [
+        {
+          "_id": 701,
+          "productName": "Smartphone X",
+          "productImg": "phone-x.jpg",
+          "brandName": "TechMaster",
+          "type": "Smartphone",
+          "price": 799.99,
+          "rating": 4.5,
+          "description": "A powerful and sleek smartphone with advanced features. Perfect for staying connected on the go."
+        },
+        {
+          "_id": 702,
+          "productName": "Laptop Pro",
+          "productImg": "laptop-pro.jpg",
+          "brandName": "TechMaster",
+          "type": "Laptop",
+          "price": 1299.99,
+          "rating": 4.8,
+          "description": "High-performance laptop with cutting-edge specifications. Ideal for work and gaming."
+        },
+        {
+          "_id": 703,
+          "productName": "Smart Speaker Plus",
+          "productImg": "speaker-plus.jpg",
+          "brandName": "TechMaster",
+          "type": "Smart Speaker",
+          "price": 149.99,
+          "rating": 4.3,
+          "description": "Immersive smart speaker with premium audio quality. Voice-controlled for your convenience."
+        },
+        {
+          "_id": 704,
+          "productName": "Ultra HD TV",
+          "productImg": "tv-ultra-hd.jpg",
+          "brandName": "TechMaster",
+          "type": "Television",
+          "price": 899.99,
+          "rating": 4.6,
+          "description": "Experience crystal-clear visuals with this Ultra HD TV. Perfect for movie nights and gaming sessions."
+        }
+      ]
+    },
+    {
+      "_id": 8,
+      "brandName": "ElectroGadget",
+      "brandImage": "electrogadget-logo.png",
+      "advertisementImages":[
+        {"img":"img1"},
+        {"img":"img1"},
+        {"img":"img1"}
+      ],
+      "brandProducts": [
+        {
+          "_id": 801,
+          "productName": "Smartwatch Pro",
+          "productImg": "watch-pro.jpg",
+          "brandName": "ElectroGadget",
+          "type": "Smartwatch",
+          "price": 199.99,
+          "rating": 4.2,
+          "description": "An elegant and feature-rich smartwatch that seamlessly integrates with your daily activities."
+        },
+        {
+          "_id": 802,
+          "productName": "Wireless Earbuds",
+          "productImg": "earbuds-wireless.jpg",
+          "brandName": "ElectroGadget",
+          "type": "Earbuds",
+          "price": 79.99,
+          "rating": 4.0,
+          "description": "Enjoy immersive audio with these stylish and comfortable wireless earbuds. Perfect for music lovers on the move."
+        },
+        {
+          "_id": 803,
+          "productName": "Home Security Camera",
+          "productImg": "camera-security.jpg",
+          "brandName": "ElectroGadget",
+          "type": "Security Camera",
+          "price": 129.99,
+          "rating": 4.4,
+          "description": "Keep an eye on your home with this high-definition security camera. Easy setup and remote monitoring."
+        },
+        {
+          "_id": 804,
+          "productName": "Power Bank Elite",
+          "productImg": "power bank-elite.jpg",
+          "brandName": "ElectroGadget",
+          "type": "Power Bank",
+          "price": 49.99,
+          "rating": 4.7,
+          "description": "Stay charged on the go with this powerful and compact power bank. Fast charging for your devices."
+        }
+      ]
+    },
+    {
+        "_id": 9,
+        "brandName": "AudioMasters",
+        "brandImage": "audiomasters-logo.png",
+        "advertisementImages":[
+            {"img":"img1"},
+            {"img":"img1"},
+            {"img":"img1"}
+          ],
+        "brandProducts": [
+          {
+            "_id": 901,
+            "productName": "Over-Ear Headphones",
+            "productImg": "headphones-overear.jpg",
+            "brandName": "AudioMasters",
+            "type": "Headphones",
+            "price": 149.99,
+            "rating": 4.7,
+            "description": "Immerse yourself in superior sound quality with these comfortable Over-Ear Headphones. Perfect for music enthusiasts."
+          },
+          {
+            "_id": 902,
+            "productName": "Bluetooth Soundbar",
+            "productImg": "soundbar-bluetooth.jpg",
+            "brandName": "AudioMasters",
+            "type": "Soundbar",
+            "price": 199.99,
+            "rating": 4.5,
+            "description": "Upgrade your home entertainment system with the Bluetooth Soundbar. Rich audio for an immersive experience."
+          },
+          {
+            "_id": 903,
+            "productName": "Hi-Fi Stereo System",
+            "productImg": "stereo-hifi.jpg",
+            "brandName": "AudioMasters",
+            "type": "Stereo System",
+            "price": 299.99,
+            "rating": 4.8,
+            "description": "Experience high-fidelity audio with the Hi-Fi Stereo System. Sleek design and powerful performance."
+          },
+          {
+            "_id": 904,
+            "productName": "Wireless In-Ear Buds",
+            "productImg": "earbuds-wireless.jpg",
+            "brandName": "AudioMasters",
+            "type": "Earbuds",
+            "price": 129.99,
+            "rating": 4.3,
+            "description": "Enjoy music on the go with these Wireless In-Ear Buds. Compact, lightweight, and with impressive sound quality."
+          }
+        ]
+    }
+    
+  ]
+  

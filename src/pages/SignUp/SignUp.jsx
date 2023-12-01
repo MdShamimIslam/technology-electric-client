@@ -185,7 +185,7 @@ const SignUp = () => {
                 </button>
               </div>
               <p className="text-center">
-                Already have an account ?{" "}
+                Already have an account ?
                 <Link className="text-lg text-blue-500" to="/signIn">
                   Sign In
                 </Link>
