@@ -19,13 +19,14 @@ const BrandInfo = () => {
   const brandProducts = products.filter(
     (product) => product.brandName === brand.brandName
   );
- 
+  
 
   return (
     <div className="my-12">
+      <AdvertisementSlide brand={brand}></AdvertisementSlide>
       {brandProducts.length > 0 ? (
         <div>
-          <AdvertisementSlide></AdvertisementSlide>
+          
           <h2 className="text-center text-2xl mt-12">Brand Product bellow</h2>
           <div className="grid grid-col-1 md:grid-cols-2  gap-6 p-4">
             {brandProducts.map((product) => (
