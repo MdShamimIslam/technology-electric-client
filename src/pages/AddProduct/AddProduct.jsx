@@ -3,11 +3,119 @@ import { Helmet } from "react-helmet-async";
 
 const AddProduct = () => {
   return (
-    <div >
-     <Helmet>
-     <title>Sinrato || Add product</title>
-     </Helmet>
-      <h2>add product</h2>
+    <div className="my-8 w-3/4 mx-auto">
+      <Helmet>
+        <title>Sinrato || Add product</title>
+      </Helmet>
+      <div>
+        <h2 className="text-center text-2xl">If You want to add Product</h2>
+        <div className="mt-4">
+          <form>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
+              <div>
+                <label className="form-control w-full">
+                  <div className="label">
+                    <span className="label-text">Product name</span>
+                  </div>
+                  <input
+                    type="text"
+                    name="productName"
+                    placeholder="product name"
+                    className="input input-bordered w-full"
+                  />
+                </label>
+              </div>
+              <div>
+                <label className="form-control w-full">
+                  <div className="label">
+                    <span className="label-text">Product Image</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="product image"
+                    name="productImg"
+                    className="input input-bordered w-full"
+                  />
+                </label>
+              </div>
+              <div>
+                <label className="form-control w-full">
+                  <div className="label">
+                    <span className="label-text">Brand name</span>
+                  </div>
+                  <select className="select select-bordered w-full">
+                    <option disabled selected>
+                      Select Brand name
+                    </option>
+                    <option>Walton</option>
+                    <option>Singer</option>
+                    <option>Jamuna</option>
+                    <option>Samsung</option>
+                    <option>Konka</option>
+                    <option>Sony</option>
+                    <option>TechMaster</option>
+                    <option>ElectroGadget</option>
+                    <option>AudioMasters</option>
+                  </select>
+                </label>
+              </div>
+              <div>
+                <label className="form-control w-full">
+                  <div className="label">
+                    <span className="label-text">product Type</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="product type"
+                    name="type"
+                    className="input input-bordered w-full"
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label className="form-control w-full">
+                  <div className="label">
+                    <span className="label-text">Price</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="price"
+                    name="price"
+                    className="input input-bordered w-full"
+                  />
+                </label>
+              </div>
+              <div>
+                <label className="form-control w-full">
+                  <div className="label">
+                    <span className="label-text">Rating</span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="rating"
+                    name="rating"
+                    className="input input-bordered w-full"
+                  />
+                </label>
+              </div>
+            </div>
+            <div>
+              <label className="form-control w-full">
+                <div className="label">
+                  <span className="label-text">Description</span>
+                </div>
+                <textarea
+                  placeholder="product description type here ..."
+                  name="description"
+                  className="textarea textarea-bordered h-36 textarea-md w-full"
+                ></textarea>
+              </label>
+            </div>
+            <button className="btn bg-cyan-300 w-full mt-4">Add Product</button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

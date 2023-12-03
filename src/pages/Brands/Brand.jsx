@@ -10,7 +10,7 @@ const Brand = ({ brand }) => {
           <img
             src={brandImage}
             className="h-[200px] w-full"
-            alt="Shoes"
+            alt="brand-image"
           />
         </figure>
         <div className="card-body">
