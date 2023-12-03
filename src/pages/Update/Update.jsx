@@ -1,9 +1,11 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Update = () => {
   const product = useLoaderData();
   const {
+    _id,
     productImg,
     productName,
     brandName,
@@ -12,11 +14,48 @@ const Update = () => {
     price,
     rating,
   } = product;
+
+  const handleUpdateProduct = (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    const productName = form.productName.value;
+    const productImg = form.productImg.value;
+    const brandName = form.brandName.value;
+    const type = form.type.value;
+    const price = form.price.value;
+    const rating = form.rating.value;
+    const description = form.description.value;
+    const updateProduct = {productName,productImg,brandName,type,price,rating,description};
+
+    fetch(`http://localhost:5000/products/${_id}`,{
+      method:'PUT',
+      headers : {
+        "content-type" : "application/json"
+      },
+      body:JSON.stringify(updateProduct)
+    })
+    .then(res=>res.json())
+    .then(data=>{
+      if (data.modifiedCount > 0) {
+        Swal.fire({
+            title: 'Success!',
+            text: 'Product Updated Successfully',
+            icon: 'success',
+            confirmButtonText: 'Ok'
+        })
+    }
+    })
+    
+
+
+  };
+
   return (
     <div className="my-8 w-3/4 mx-auto">
       <h2 className="text-center text-2xl">Brand Product update bellow</h2>
       <div className="mt-4">
-        <form>
+        <form onSubmit={handleUpdateProduct}>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
             <div>
               <label className="form-control w-full">
@@ -110,6 +149,7 @@ const Update = () => {
                 <span className="label-text">Description</span>
               </div>
               <textarea
+                type="text"
                 placeholder="description"
                 name="description"
                 defaultValue={description}
