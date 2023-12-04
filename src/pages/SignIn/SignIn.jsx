@@ -66,7 +66,7 @@ const SignIn = () => {
     return (
         <div className="hero">
       <Helmet>
-        <title>Sinrato || Sign In</title>
+        <title>MyShop || Sign In</title>
       </Helmet>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">

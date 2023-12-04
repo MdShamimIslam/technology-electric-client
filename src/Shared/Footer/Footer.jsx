@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebook,FaTwitter,FaLinkedin } from 'react-icons/fa';
-import logo from '../../assets/logo.png';
+import myShop from '../../assets/myShop.png';
 
 const Footer = () => {
     return (
@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className="footer">
         <aside>
           <Link to='/'>
-          <img className="w-24" src={logo} alt="website-logo" />
+          <img className="w-24" src={myShop} alt="website-logo" />
           </Link>
           <p>
             <span className="lg:text-2xl md:text-xl text-lg font-semibold">

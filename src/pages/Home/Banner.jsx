@@ -4,7 +4,7 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 
 const Banner = () => {
     return (
-        <div className='flex flex-col-reverse lg:flex-row items-center justify-between my-20 ml-20'>
+        <div className='flex flex-col-reverse lg:flex-row items-center justify-between my-20 ml-12 md:ml-20'>
             <div className='flex-1 border-red-500 md:space-y-4 space-y-2 md:mt-12 lg:mt-0 mt-8 p-4'>
                 <p className='text-lg'>Enhanced Technology</p>
                 <h2 className="md:text-5xl text-3xl font-semibold">Live a Better Day</h2>

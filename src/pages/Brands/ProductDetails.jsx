@@ -50,7 +50,7 @@ const ProductDetails = () => {
   return (
     <div className="my-16">
       <Helmet>
-        <title>Sinrato || product details</title>
+        <title>MyShop || product details</title>
       </Helmet>
       <h3 className="md:text-4xl text-2xl font-semibold text-center text-primary">
         Product details

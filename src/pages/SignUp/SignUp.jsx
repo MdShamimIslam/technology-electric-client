@@ -101,7 +101,7 @@ const SignUp = () => {
   return (
     <div className="hero mb-8 mt-12">
       <Helmet>
-        <title>Sinrato || Sign Up</title>
+        <title>MyShop || Sign Up</title>
       </Helmet>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left ml-20">
@@ -109,7 +109,9 @@ const SignUp = () => {
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mt-8">
           <div className="card-body">
-            <h1 className="text-3xl font-bold text-center text-primary">Sign Up now!</h1>
+            <h1 className="text-3xl font-bold text-center text-primary">
+              Sign Up now!
+            </h1>
             <div className="bg-slate-100 rounded-lg mt-2">
               {errorMess && (
                 <p className="text-red-600 text-center p-2">
@@ -190,7 +192,10 @@ const SignUp = () => {
               </button>
             </div>
             <p className="text-center">
-              Already have an account ? <Link className="text-lg text-blue-500" to="/signIn">Sign In</Link>
+              Already have an account ?{" "}
+              <Link className="text-lg text-blue-500" to="/signIn">
+                Sign In
+              </Link>
             </p>
           </div>
         </div>

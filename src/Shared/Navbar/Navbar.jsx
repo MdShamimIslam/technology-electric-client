@@ -1,6 +1,6 @@
 import React, { useContext} from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import myShop from "../../assets/myShop.png";
 import { AuthContext } from "../../provider/AuthProvider";
 import Swal from "sweetalert2";
 import userImage from "../../assets/user.png";
@@ -67,9 +67,9 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="flex items-center justify-center">
-          <img className="w-[80px]" src={logo} alt="website-logo" />
-          <h2 className="text-4xl font-bold -ml-4">
-            <span className="text-cyan-500">S</span>inrato
+          <img className="w-[80px]" src={myShop} alt="website-logo" />
+          <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold -ml-4">
+            <span className="text-cyan-500">M</span>y<span className="text-cyan-500">S</span>hop
           </h2>
         </Link>
       </div>

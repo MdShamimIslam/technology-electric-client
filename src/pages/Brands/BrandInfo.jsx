@@ -24,7 +24,7 @@ const BrandInfo = () => {
   return (
     <div className="my-12">
       <Helmet>
-        <title>Sinrato || brand product</title>
+        <title>MyShop || brand product</title>
       </Helmet>
       <AdvertisementSlide brand={brand}></AdvertisementSlide>
       <div className="my-24">
@@ -34,20 +34,20 @@ const BrandInfo = () => {
               Brand Product
             </h2>
             <div className="lg:flex justify-center gap-10">
-            <div className="grid grid-col-1 md:grid-cols-2 md:gap-8 lg:gap-16 lg:m-0 m-4">
-              {brandProducts.map((product) => (
-                <BrandProduct
-                  key={product._id}
-                  product={product}
-                ></BrandProduct>
-              ))}
-            </div>
+              <div className="grid grid-col-1 md:grid-cols-2 md:gap-8 lg:gap-16 lg:m-0 m-4">
+                {brandProducts.map((product) => (
+                  <BrandProduct
+                    key={product._id}
+                    product={product}
+                  ></BrandProduct>
+                ))}
+              </div>
             </div>
           </div>
         ) : (
           <div>
             <h2 className="text-center md:text-4xl font-semibold text-2xl text-success">
-               " No Product Available "
+              " No Product Available "
             </h2>
           </div>
         )}

@@ -47,7 +47,7 @@ const MyCart = () => {
   return (
     <div className="my-16">
       <Helmet>
-        <title>Sinrato || My cart</title>
+        <title>MyShop || My cart</title>
       </Helmet>
       <div className="overflow-x-auto bg-cyan-950 rounded-lg">
         <table className="table">

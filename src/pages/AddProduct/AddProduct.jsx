@@ -50,13 +50,13 @@ const AddProduct = () => {
   return (
     <div className="my-12 w-3/4 mx-auto">
       <Helmet>
-        <title>Sinrato || Add product</title>
+        <title>MyShop || Add product</title>
       </Helmet>
       <div>
         <h2 className="md:text-4xl text-2xl font-semibold text-center text-primary">
           If You want to add Product
         </h2>
-        <div className="mt-12">
+        <div className="my-12">
           <form onSubmit={handleAddToProduct}>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
               <div>
@@ -143,7 +143,7 @@ const AddProduct = () => {
                 </label>
               </div>
             </div>
-            <div>
+            <div className="mt-6">
               <label className="form-control w-full">
                 <div className="label">
                   <span className="label-text">Description</span>
@@ -154,7 +154,9 @@ const AddProduct = () => {
                 ></textarea>
               </label>
             </div>
-            <button className="btn bg-cyan-700 w-full mt-4 ">Add Product</button>
+            <button className="btn bg-cyan-700 w-full mt-6 ">
+              Add Product
+            </button>
           </form>
         </div>
       </div>

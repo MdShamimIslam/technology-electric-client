@@ -64,7 +64,7 @@ const Update = () => {
   return (
     <div className="my-16 w-3/4 mx-auto">
       <Helmet>
-        <title>Sinrato || update product</title>
+        <title>MyShop || update product</title>
       </Helmet>
       <h2 className="md:text-4xl text-2xl font-semibold text-center">
         Brand Product update
