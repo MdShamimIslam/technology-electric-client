@@ -1,8 +1,11 @@
 import React from "react";
+import Rating from "react-rating";
 import { Link } from "react-router-dom";
+import { IoStar, IoStarOutline } from "react-icons/io5";
 
 const BrandProduct = ({ product }) => {
-  const { _id, productName, productImg, brandName, type, price, rating } = product;
+  const { _id, productName, productImg, brandName, type, price, rating } =
+    product;
 
   return (
     <div className="card shadow-xl">
@@ -15,6 +18,7 @@ const BrandProduct = ({ product }) => {
         <p>Type : {type}</p>
         <p>Price : $ {price}</p>
         <p>rating : {rating}</p>
+        <Rating initialRating={rating} readonly />
         <div className="card-actions w-full">
           <Link to={`/productDetails/${_id}`}>
             <button className="btn btn-ghost bg-blue-400">Details</button>

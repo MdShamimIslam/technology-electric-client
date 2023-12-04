@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { useLoaderData} from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { MdDelete } from "react-icons/md";
 import Swal from "sweetalert2";
 
 const MyCart = () => {
   const loadedCarts = useLoaderData();
-  const [carts,setCarts] = useState(loadedCarts);
+  const [carts, setCarts] = useState(loadedCarts);
 
   const handleCartProductDelete = (cart) => {
     Swal.fire({
@@ -19,9 +19,12 @@ const MyCart = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/carts/${cart._id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://technology-electronic-server-zeta.vercel.app/carts/${cart._id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
@@ -32,12 +35,11 @@ const MyCart = () => {
               });
             }
 
-            const remainingProduct = loadedCarts.filter(c => c._id !== cart._id);
+            const remainingProduct = loadedCarts.filter(
+              (c) => c._id !== cart._id
+            );
             setCarts(remainingProduct);
-
           });
-
-        
       }
     });
   };

@@ -12,47 +12,73 @@ import ProductDetails from "../pages/Brands/ProductDetails";
 import Update from "../pages/Update/Update";
 
 export const router = createBrowserRouter([
-    {
-        path:'/',
-        element:<Main></Main>,
-        errorElement:<ErrorPage></ErrorPage>,
-        children:[
-            {
-                path:'/',
-                element:<Home></Home>
-            },
-            {
-                path:'/signIn',
-                element:<SignIn></SignIn>
-            },
-            {
-                path:'/signUp',
-                element:<SignUp></SignUp>
-            },
-            {
-                path:'/addProduct',
-                element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute>
-            },
-            {
-                path:'/myCart',
-                element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
-                loader:()=>fetch('http://localhost:5000/carts')
-            },
-            {
-                path:'/brand/:id',
-                element:<BrandInfo></BrandInfo>,
-                loader:({params})=> fetch(`http://localhost:5000/brands/${params.id}`)
-            },
-            {
-                path:'/productDetails/:id',
-                element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
-            },
-            {
-                path:'/updateProduct/:id',
-                element:<PrivateRoute><Update></Update></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
-            }
-        ]
-    }
-])
+  {
+    path: "/",
+    element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/signIn",
+        element: <SignIn></SignIn>,
+      },
+      {
+        path: "/signUp",
+        element: <SignUp></SignUp>,
+      },
+      {
+        path: "/addProduct",
+        element: (
+          <PrivateRoute>
+            <AddProduct></AddProduct>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/myCart",
+        element: (
+          <PrivateRoute>
+            <MyCart></MyCart>
+          </PrivateRoute>
+        ),
+        loader: () =>
+          fetch("https://technology-electronic-server-zeta.vercel.app/carts"),
+      },
+      {
+        path: "/brand/:id",
+        element: <BrandInfo></BrandInfo>,
+        loader: ({ params }) =>
+          fetch(
+            `https://technology-electronic-server-zeta.vercel.app/brands/${params.id}`
+          ),
+      },
+      {
+        path: "/productDetails/:id",
+        element: (
+          <PrivateRoute>
+            <ProductDetails></ProductDetails>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://technology-electronic-server-zeta.vercel.app/products/${params.id}`
+          ),
+      },
+      {
+        path: "/updateProduct/:id",
+        element: (
+          <PrivateRoute>
+            <Update></Update>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://technology-electronic-server-zeta.vercel.app/products/${params.id}`
+          ),
+      },
+    ],
+  },
+]);

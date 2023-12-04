@@ -70,7 +70,7 @@ const SignIn = () => {
       </Helmet>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <img className='' src={login} alt="login-image" />
+          <img className='md:w-3/4 lg:w-full mx-auto' src={login} alt="login-image" />
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 my-12">
           <div className="card-body ">

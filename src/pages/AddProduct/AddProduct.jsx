@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 
 const AddProduct = () => {
-
   const handleAddToProduct = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -16,31 +15,36 @@ const AddProduct = () => {
     const rating = form.rating.value;
     const description = form.description.value;
 
-    const addProduct = {productName,productImg,brandName,type,price,rating,description};
+    const addProduct = {
+      productName,
+      productImg,
+      brandName,
+      type,
+      price,
+      rating,
+      description,
+    };
 
-    fetch('http://localhost:5000/products',{
-      method:'POST',
-      headers : {
-        "content-type" : "application/json"
+    fetch("https://technology-electronic-server-zeta.vercel.app/products", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
       },
-      body:JSON.stringify(addProduct)
+      body: JSON.stringify(addProduct),
     })
-    .then(res=>res.json())
-    .then(data=>{
-      if (data.insertedId) {
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: "Product added Successfully",
-          showConfirmButton: false,
-          timer: 1500,
-        });
-        form.reset();
-    }
-    })
-    
-
-
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Product added Successfully",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          form.reset();
+        }
+      });
   };
 
   return (
@@ -49,7 +53,9 @@ const AddProduct = () => {
         <title>Sinrato || Add product</title>
       </Helmet>
       <div>
-        <h2 className="text-center text-2xl">If You want to add Product</h2>
+        <h2 className="md:text-3xl text-2xl font-semibold text-center">
+          If You want to add Product
+        </h2>
         <div className="mt-4">
           <form onSubmit={handleAddToProduct}>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
@@ -84,10 +90,11 @@ const AddProduct = () => {
                   <div className="label">
                     <span className="label-text">Brand name</span>
                   </div>
-                  <select name="brandName" className="select select-bordered w-full">
-                    <option>
-                      Select Brand name
-                    </option>
+                  <select
+                    name="brandName"
+                    className="select select-bordered w-full"
+                  >
+                    <option>Select Brand name</option>
                     <option>Walton</option>
                     <option>Singer</option>
                     <option>Jamuna</option>

@@ -6,7 +6,6 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const AdvertisementSlide = ({ brand }) => {
-  console.log(brand);
   const { advertisementImg1, advertisementImg2, advertisementImg3 } = brand;
 
   return (
@@ -23,10 +22,10 @@ const AdvertisementSlide = ({ brand }) => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper z-0 w-3/4 rounded-lg"
+        className="mySwiper z-0 lg:w-full md:w-10/12 w-5/6 rounded-lg"
       >
         <SwiperSlide >
-          <img className="w-full h-[400px]" src={advertisementImg1} alt="advertisement-Image" />
+          <img className="w-full md:h-[400px] h-[300px]" src={advertisementImg1} alt="advertisement-Image" />
         </SwiperSlide>
         <SwiperSlide>
           <img className="w-full h-[400px]" src={advertisementImg2} alt="advertisement-Image" />
