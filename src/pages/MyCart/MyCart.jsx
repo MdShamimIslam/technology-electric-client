@@ -45,11 +45,11 @@ const MyCart = () => {
   };
 
   return (
-    <div className="my-12">
+    <div className="my-16">
       <Helmet>
         <title>Sinrato || My cart</title>
       </Helmet>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto bg-cyan-950 rounded-lg">
         <table className="table">
           <thead>
             <tr className="text-lg">
@@ -80,11 +80,11 @@ const MyCart = () => {
                 </td>
                 <td className="font-semibold">{cart.brandName}</td>
                 <td>{cart.type}</td>
-                <td>{cart.price}</td>
+                <td>${cart.price}</td>
                 <th>
                   <button
                     onClick={() => handleCartProductDelete(cart)}
-                    className="btn btn-ghost  text-xl text-red-500"
+                    className="btn btn-ghost  text-2xl text-red-500"
                   >
                     <MdDelete />
                   </button>

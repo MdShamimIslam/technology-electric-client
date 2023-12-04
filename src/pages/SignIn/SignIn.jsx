@@ -72,9 +72,9 @@ const SignIn = () => {
         <div className="text-center lg:text-left">
           <img className='md:w-3/4 lg:w-full mx-auto' src={login} alt="login-image" />
         </div>
-        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 my-12">
+        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 md:my-12 my-4">
           <div className="card-body ">
-            <h1 className="text-4xl font-bold text-center">Sign In now!</h1>
+            <h1 className="text-4xl font-bold text-center text-primary">Sign In now!</h1>
             <div className="bg-slate-100 rounded-lg mt-2">
               {errorMess && (
                 <p className="text-red-600 text-center p-2">
@@ -121,11 +121,11 @@ const SignIn = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Sign In</button>
+                <button className="btn bg-gradient-to-r from-sky-500 to-indigo-500">Sign In</button>
               </div>
             </form>
             <div>
-              <button onClick={handleGoogleSignIn} className="btn w-full my-4">
+              <button onClick={handleGoogleSignIn} className="btn bg-cyan-800 w-full my-4">
                 <FcGoogle className="text-xl"></FcGoogle>
                 Sign In with Google
               </button>

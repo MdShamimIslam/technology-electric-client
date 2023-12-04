@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext} from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { AuthContext } from "../../provider/AuthProvider";
@@ -102,12 +102,12 @@ const Navbar = () => {
             {user ? (
               <button
                 onClick={handleSignOut}
-                className="btn text-lg font-medium"
+                className="btn text-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-black hover:text-white font-medium"
               >
                 Sign Out
               </button>
             ) : (
-              <button className="btn text-lg font-medium">
+              <button className="btn text-lg font-medium bg-gradient-to-r from-sky-500 to-indigo-500">
                 <Link to="/signIn">Sign In</Link>
               </button>
             )}

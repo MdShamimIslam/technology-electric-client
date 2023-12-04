@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import Rating from "react-rating";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -47,17 +48,17 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className="my-12">
+    <div className="my-16">
       <Helmet>
         <title>Sinrato || product details</title>
       </Helmet>
-      <h3 className="md:text-3xl text-2xl font-semibold text-center">
+      <h3 className="md:text-4xl text-2xl font-semibold text-center text-primary">
         Product details
       </h3>
-      <div className="card md:w-2/3 w-4/5 mx-auto shadow-xl my-8">
+      <div className="card md:w-2/3 w-4/5 mx-auto shadow-2xl my-16">
         <figure>
           <img
-            className="h-[200px] mt-4"
+            className="h-[300px] mt-4 w-full rounded-lg"
             src={productImg}
             alt="product-image"
           />
@@ -68,11 +69,11 @@ const ProductDetails = () => {
           <p>{description}</p>
           <p>Type : {type}</p>
           <p>Price : $ {price}</p>
-          <p>rating : {rating}</p>
+          <Rating initialRating={rating} readonly />
           <div className="card-actions ">
             <button
               onClick={handleAddToProduct}
-              className="btn btn-ghost bg-blue-400 w-full"
+              className="btn btn-ghost bg-cyan-700 w-full"
             >
               Add to Cart
             </button>

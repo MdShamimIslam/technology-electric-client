@@ -62,14 +62,14 @@ const Update = () => {
   };
 
   return (
-    <div className="my-8 w-3/4 mx-auto">
+    <div className="my-16 w-3/4 mx-auto">
       <Helmet>
         <title>Sinrato || update product</title>
       </Helmet>
-      <h2 className="md:text-3xl text-2xl font-semibold text-center">
+      <h2 className="md:text-4xl text-2xl font-semibold text-center">
         Brand Product update
       </h2>
-      <div className="mt-4">
+      <div className="my-12">
         <form onSubmit={handleUpdateProduct}>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
             <div>
@@ -172,7 +172,7 @@ const Update = () => {
               ></textarea>
             </label>
           </div>
-          <button className="btn bg-cyan-300 w-full mt-4">Submit</button>
+          <button className="btn bg-cyan-700 w-full mt-4">Submit</button>
         </form>
       </div>
     </div>

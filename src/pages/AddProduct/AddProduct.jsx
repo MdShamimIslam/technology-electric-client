@@ -48,15 +48,15 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="my-8 w-3/4 mx-auto">
+    <div className="my-12 w-3/4 mx-auto">
       <Helmet>
         <title>Sinrato || Add product</title>
       </Helmet>
       <div>
-        <h2 className="md:text-3xl text-2xl font-semibold text-center">
+        <h2 className="md:text-4xl text-2xl font-semibold text-center text-primary">
           If You want to add Product
         </h2>
-        <div className="mt-4">
+        <div className="mt-12">
           <form onSubmit={handleAddToProduct}>
             <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
               <div>
@@ -67,8 +67,7 @@ const AddProduct = () => {
                   <input
                     type="text"
                     name="productName"
-                    placeholder="product name"
-                    className="input input-bordered w-full"
+                    className="input input-bordered input-secondary w-full"
                   />
                 </label>
               </div>
@@ -79,9 +78,8 @@ const AddProduct = () => {
                   </div>
                   <input
                     type="text"
-                    placeholder="product image"
                     name="productImg"
-                    className="input input-bordered w-full"
+                    className="input input-bordered input-secondary w-full"
                   />
                 </label>
               </div>
@@ -92,7 +90,7 @@ const AddProduct = () => {
                   </div>
                   <select
                     name="brandName"
-                    className="select select-bordered w-full"
+                    className="select select-bordered select-secondary w-full"
                   >
                     <option>Select Brand name</option>
                     <option>Walton</option>
@@ -114,9 +112,8 @@ const AddProduct = () => {
                   </div>
                   <input
                     type="text"
-                    placeholder="product type"
                     name="type"
-                    className="input input-bordered w-full"
+                    className="input input-bordered input-secondary w-full"
                   />
                 </label>
               </div>
@@ -128,9 +125,8 @@ const AddProduct = () => {
                   </div>
                   <input
                     type="text"
-                    placeholder="price"
                     name="price"
-                    className="input input-bordered w-full"
+                    className="input input-bordered input-secondary w-full"
                   />
                 </label>
               </div>
@@ -141,9 +137,8 @@ const AddProduct = () => {
                   </div>
                   <input
                     type="text"
-                    placeholder="rating"
                     name="rating"
-                    className="input input-bordered w-full"
+                    className="input input-bordered input-secondary w-full"
                   />
                 </label>
               </div>
@@ -154,13 +149,12 @@ const AddProduct = () => {
                   <span className="label-text">Description</span>
                 </div>
                 <textarea
-                  placeholder="product description type here ..."
                   name="description"
-                  className="textarea textarea-bordered h-36 textarea-md w-full"
+                  className="textarea textarea-bordered textarea-secondary h-36 textarea-md w-full"
                 ></textarea>
               </label>
             </div>
-            <button className="btn bg-cyan-300 w-full mt-4">Add Product</button>
+            <button className="btn bg-cyan-700 w-full mt-4 ">Add Product</button>
           </form>
         </div>
       </div>

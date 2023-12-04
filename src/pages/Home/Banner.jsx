@@ -14,13 +14,13 @@ const Banner = () => {
                 <h3 className="md:text-3xl text-2xl font-bold text-cyan-500">$88.99</h3>
                 <h3 className="text-xl font-bold line-through text-slate-400">$102.99</h3>
                 <div className='flex items-center'>
-                <button className='btn bg-cyan-500 text-white md:text-lg'>Shop Now <IoArrowForwardSharp/></button>
+                <button className='btn bg-gradient-to-r from-sky-500 to-indigo-500 text-white md:text-lg'>Shop Now <IoArrowForwardSharp/></button>
                 
                 </div>
             </div>
             <div className='flex-1'>
              
-                <img className='md:w-2/3 w-2/3' src={bannerImg} alt="" />
+                <img className='md:w-1/2 w-2/3 lg:w-2/3 md:ml-16 lg:ml-0' src={bannerImg} alt="" />
                 
                 
             </div>

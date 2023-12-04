@@ -6,7 +6,7 @@ import Footer from "../Shared/Footer/Footer";
 const Main = () => {
   return (
     <div>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto font-poppins">
       <Navbar></Navbar>
       <Outlet></Outlet>
       </div>

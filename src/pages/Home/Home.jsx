@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import { Helmet } from "react-helmet-async";
 import Brands from "../Brands/Brands";
 import Reviews from "./Reviews";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Banner></Banner>
       <Brands></Brands>
       <Reviews></Reviews>
+      <Contact></Contact>
     </div>
   );
 };
