@@ -13,7 +13,7 @@ const Footer = () => {
           </Link>
           <p>
             <span className="lg:text-2xl md:text-xl text-lg font-semibold">
-              <span className="text-cyan-500">S</span>inrato Industries Ltd.
+              <span className="text-cyan-500">M</span>y<span className="text-cyan-500">S</span>hop Industries Ltd.
             </span>
             <br />
             <span className="mt-2">

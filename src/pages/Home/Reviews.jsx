@@ -38,17 +38,17 @@ const Reviews = () => {
       >
         {reviews?.map((review) => (
           <SwiperSlide key={review._id}>
-            <div className="lg:w-1/3 md:w-2/3 w-1/2 m-auto mt-16">
+            <div className="lg:w-1/3 w-2/3 m-auto mt-16">
               <div className="flex items-center justify-between">
                 <Rating initialRating={review.rating} readonly />
                 <img
-                  className="w-[40px]"
+                  className="md:w-[40px] w-[35px]"
                   src={commentImg}
                   alt="comment-image"
                 />
               </div>
               <div className="my-8">
-              <h2 className="text-xl font-semibold">Product-Name : {review.productName}</h2>
+              <h2 className="md:text-xl text-lg font-semibold">Product-Name : {review.productName}</h2>
               <p><span className="font-semibold">Comment</span> : {review.des}</p>
               <div className="flex md:flex-row flex-col md:items-center gap-6 md:mt-4 mt-8">
                 <div className="avatar">

@@ -49,11 +49,11 @@ const MyCart = () => {
       <Helmet>
         <title>MyShop || My cart</title>
       </Helmet>
-      <div className="overflow-x-auto bg-cyan-950 rounded-lg">
+      <div className="overflow-x-auto bg-cyan-950 rounded-lg m-2 md:m-4">
         <table className="table">
           <thead>
-            <tr className="text-lg">
-              <th>Product image</th>
+            <tr className="md:text-lg">
+              <th>image</th>
               <th>Product name</th>
               <th>Brand name</th>
               <th>Type</th>
@@ -66,25 +66,25 @@ const MyCart = () => {
               <tr key={cart._id}>
                 <td>
                   <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
+                    <div className="mask mask-squircle md:w-12 md:h-12 w-8 h-8">
                       <img src={cart.productImg} alt="product-image" />
                     </div>
                   </div>
                 </td>
                 <td>
-                  <div className="flex items-center gap-3">
+                  <div className="">
                     <div>
                       <div className="">{cart.productName}</div>
                     </div>
                   </div>
                 </td>
-                <td className="font-semibold">{cart.brandName}</td>
+                <td>{cart.brandName}</td>
                 <td>{cart.type}</td>
                 <td>${cart.price}</td>
                 <th>
                   <button
                     onClick={() => handleCartProductDelete(cart)}
-                    className="btn btn-ghost  text-2xl text-red-500"
+                    className="btn btn-ghost md:text-2xl text-xl text-red-500"
                   >
                     <MdDelete />
                   </button>

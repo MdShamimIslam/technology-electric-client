@@ -81,9 +81,9 @@ const Navbar = () => {
               <label
                 tabIndex={0}
                 data-tip={user?.displayName}
-                className="btn btn-ghost btn-circle avatar mr-2 tooltip"
+                className="btn btn-ghost btn-circle avatar md:mr-2 tooltip"
               >
-                <div className="w-12  rounded-full">
+                <div className="md:w-12 w-8 rounded-full md:mt-0 mt-2 md:ml-0 ml-2">
                   <img alt="user-image" src={user?.photoURL} />
                 </div>
               </label>
@@ -91,9 +91,9 @@ const Navbar = () => {
               <label
                 tabIndex={0}
                 data-tip="No User"
-                className="btn btn-ghost btn-circle avatar mr-2 tooltip"
+                className="btn btn-ghost btn-circle avatar md:mr-2 tooltip"
               >
-                <div className="w-12  rounded-full">
+                <div className="md:w-12 w-8  rounded-full md:mt-0 mt-2 md:ml-0 ml-3">
                   <img alt="user-image" src={userImage} />
                 </div>
               </label>
@@ -102,12 +102,12 @@ const Navbar = () => {
             {user ? (
               <button
                 onClick={handleSignOut}
-                className="btn text-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-black hover:text-white font-medium"
+                className="btn md:btn-md btn-sm md:text-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-black hover:text-white font-medium"
               >
                 Sign Out
               </button>
             ) : (
-              <button className="btn text-lg font-medium bg-gradient-to-r from-sky-500 to-indigo-500">
+              <button className="btn md:btn-md btn-sm md:text-lg font-medium bg-gradient-to-r from-sky-500 to-indigo-500">
                 <Link to="/signIn">Sign In</Link>
               </button>
             )}
